@@ -1,0 +1,44 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "recipe helper",
+      "types": [
+
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "RH_FindRecipeIntent",
+          "slots": [
+            {
+              "name": "RecipeName",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "find me the {RecipeName} recipe",
+            "read me the {RecipeName} recipe",
+            "look up the {RecipeName} recipe"
+          ]
+        }
+      ]
+    }
+  }
+}
